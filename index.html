@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">  
+<head>
+  <meta charset="UTF-8">
+  <title>100th Year Celebration</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans|PT+Sans|Source+Sans+Pro" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <link rel="stylesheet" href="css/screen.css">
+  
+  <style> 
+    * {
+      box-sizing: border-box;
+    }
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+  
+    mark {
+        background-color: yellow;
+        color:            black;
+    }
+
+    #body, header, footer, .organizers, .whenwhere {
+      border:         1px solid black;    
+      margin:         10px;
+    }
+    
+    h1, h2, h3, h4, h5, h6 {
+      background-color:    #A0522D;
+      color:               #ffffff;
+      margin-top:          5px;
+      margin-bottom:       5px;
+      margin-left:         5px;
+      margin-right:        5px;
+      padding:             5px;
+    }
+    
+    header, main, footer, #copyright-1, #copyright-2 {
+        display:           none;
+    }
+    .organizers {
+     margin:         10px;
+     float:          left;
+    }
+    .whenwhere {
+     margin:         10px;
+     float:          right;
+    }
+    
+  </style>
+</head>
+
+<body>
+
+  <div class="container-fluid" id="body"> 
+  
+  <header class="col-12">
+    <h1><i>Northern Illinois Jurisdiction 100th Year Celebration Evangelist Department Workshop</i></h1>
+  </header>
+
+  <div class=" col-3 organizers">
+    <h2>Speakers</h2>
+    <ul>
+      <li>Elder Anthony Scott</li>
+      <li>Sister Pearl Scott</li>
+      <li>Sister Peggy Rudolph</li>
+    </ul>
+  </div>
+
+<div class=" col-3 whenwhere">
+    <h2>Date, Time, Where</h2>
+    <ul>
+      <li>June 30, 2019</li>
+      <li>7pm - 9pm</li>
+      <li>6341 S. Blackstone</li>
+      <li>Chicago, Illinois 60653</li>
+    </ul>
+  </div>
+
+  <main class="col-5">
+    <img src="img/Jesus-Christ.jpg" alt="Jesus Christ">
+  </main>
+
+  <footer class="col-12">
+    <h1><strong><i>Exodus 33:19</i></strong></h1> 
+    <h1><i>. . . and I will proclaim the name of the Lord before thee; and will be gracious to whom I will be gracious, and will shew mercy on whom I will shew mercy.</i></h1>
+  </footer>
+
+  <div class="copyright">
+    <p id="copyright-1"></p>
+    <p id="copyright-2"><strong><mark>All Rights Reserved</mark></strong></p>
+  </div>
+    
+  <script>
+    var d = new Date();
+    var days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];              
+    document.getElementById("copyright-1").innerHTML = "<strong><mark>© Copyright " + d.getFullYear() + " Gregory & Christine Scott</mark></strong>.";
+  </script>
+  </div>		
+
+  <script>
+    $(document).ready(function() {
+      $( "header" ).toggle(1000);
+      $( "main" ).toggle(2000);
+      $( "footer" ).toggle(3000);
+      $( "#copyright-1" ).toggle(4000);
+      $( "#copyright-2" ).toggle(5000);
+      $("footer").hover(function(){
+        $( "#copyright-1" ).toggle(1000);
+      },
+        function(){
+        $( "#copyright-1" ).toggle(1000);
+      });
+    }); 
+  </script>
+</body>
+</html>

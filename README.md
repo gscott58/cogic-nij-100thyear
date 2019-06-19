@@ -1,2 +1,2 @@
-# cogic-nij-100thyear
-Church of God in Christ
+# itmd-361-proj01
+ITMD 361 Fundamentals of Web Development Proj01
