@@ -88,68 +88,72 @@
 
 <body>
 <div class="container-fluid" id="body">
-
-    <header class="col-12">
-      <h1><i>Northern Illinois Jurisdiction 100th Year Celebration Evangelist Department Workshop</i></h1>
-    </header>
-
-    <div class="col-3" id="organizers">
-      <h2>Committee Members</h2>
-      <ul>
-        <li>Elder Anthony Scott</li>
-        <li>Sister Pearl Scott</li>
-        <li>Sister Peggy Rudolph</li>
-      </ul>
-    </div>
-
-    <div class="col-3" id="whenwhere">
-      <h2>Date, Time, Where</h2>
-      <ul>
-        <li>June 30, 2019</li>
-        <li>7pm - 9pm</li>
-        <li>6341 S. Blackstone</li>
-        <li>Chicago, Illinois 60653</li>
-      </ul>
+    <div class="row">
+        <header class="col-12">
+            <h1><i>Northern Illinois Jurisdiction 100th Year Celebration Evangelist Department Workshop</i></h1>
+        </header>
     </div>
     
-    <main class="col-5">
-      <img src="img/Jesus-Christ.jpg" alt="Jesus Christ">
-    </main>
-
-    <footer class="col-12">
-      <h1><strong><i><a id="bibleverse" href="https://www.biblegateway.com/passage/?search=Exodus+33%3A19&version=KJV"><strong>Exodus 33:19</strong></a></i></strong></h1> 
-      <h1><i>. . . and I will proclaim the name of the Lord before thee; and will be gracious to whom I will be gracious, and will shew mercy on whom I will shew mercy.</i></h1>
-    </footer>
-
-    <div class="copyright">
-      <p id="copyright-1"></p>
-      <p id="copyright-2"><strong><mark>All Rights Reserved</mark></strong></p>
+    <div class="row">
+        <div class="col-3" id="organizers">
+          <h2>Committee Members</h2>
+          <ul>
+            <li>Elder Anthony Scott</li>
+            <li>Sister Pearl Scott</li>
+            <li>Sister Peggy Rudolph</li>
+          </ul>
+        </div>
+        <div class="col-3" id="whenwhere">
+          <h2>Date, Time, Where</h2>
+          <ul>
+            <li>June 30, 2019</li>
+            <li>7pm - 9pm</li>
+            <li>6341 S. Blackstone</li>
+            <li>Chicago, Illinois 60653</li>
+          </ul>
+        </div>   
+        <div>
+          <main class="col-5">
+            <img src="img/Jesus-Christ.jpg" alt="Jesus Christ">
+          </main>
+        </div>
     </div>
-      
-
+    
+    <div class="row">
+        <footer class="col-12">
+            <h1><strong><i><a id="bibleverse" href="https://www.biblegateway.com/passage/?search=Exodus+33%3A19&version=KJV"><strong>Exodus 33:19</strong></a></i></strong></h1> 
+            <h1><i>. . . and I will proclaim the name of the Lord before thee; and will be gracious to whom I will be gracious, and will shew mercy on whom I will shew mercy.</i></h1>
+        </footer>
+    </div>
+    
+    <div class="row">
+        <div class="col-12 copyright">
+            <p id="copyright-1"></p>
+            <p id="copyright-2"><strong><mark>All Rights Reserved</mark></strong></p>
+        </div> 
+    </div>   
 </div>
 		
   <script>
-    var d = new Date();
-    var days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+      var d = new Date();
+      var days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+      
+      document.getElementById("copyright-1").innerHTML = "<strong><mark>© Copyright " + d.getFullYear() + " Gregory & Christine Scott</mark></strong>.";
     
-    document.getElementById("copyright-1").innerHTML = "<strong><mark>© Copyright " + d.getFullYear() + " Gregory & Christine Scott</mark></strong>.";
-  
-    $(document).ready(function() {
-      $( "header" ).toggle(1000);
-      $( "main" ).toggle(2000);
-      $( "footer" ).toggle(3000);
-      $( "#copyright-1" ).toggle(4000);
-      $( "#copyright-2" ).toggle(5000);
+      $(document).ready(function() {
+        $( "header" ).toggle(1000);
+        $( "main" ).toggle(2000);
+        $( "footer" ).toggle(3000);
+        $( "#copyright-1" ).toggle(4000);
+        $( "#copyright-2" ).toggle(5000);
 
-      $("footer").hover(function(){
-        $( "#copyright-1" ).effect("shake");
-      },
-        function(){
-        $( "#copyright-2" ).effect("shake");
-      });    
-
-    }); 
+        $("footer").hover(function(){
+          $( "#copyright-1" ).effect("shake");
+        },
+          function(){
+          $( "#copyright-2" ).effect("shake");
+        });    
+      }); 
   </script>
 </body>
 </html>
