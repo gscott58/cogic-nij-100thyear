@@ -11,7 +11,10 @@
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <link rel="stylesheet" href="css/screen.css">
   
-  <style> 
+  <style>
+    .row1 {
+      margin-top:         10px;
+    }
      mark {
         background-color: yellow;
         color:            black;
@@ -76,7 +79,7 @@
     a:hover {
       color: #ffffff;
     }
-
+    
     /*-----------------*/
     /*- selected link -*/
     /*-----------------*/
@@ -87,14 +90,15 @@
 </head>
 
 <body>
+
 <div class="container-fluid" id="body">
-    <div class="row">
-        <header class="col-12">
+
+    <div class="row1">
+        <header class="col-12 col-s-12">
             <h1><i>Northern Illinois Jurisdiction 100th Year Celebration Evangelist Department Workshop</i></h1>
         </header>
     </div>
-    
-    <div class="row">
+    <div class="row2">
         <div class="col-3" id="organizers">
           <h2>Committee Members</h2>
           <ul>
@@ -118,20 +122,19 @@
           </main>
         </div>
     </div>
-    
-    <div class="row">
+    <div class="row3">
         <footer class="col-12">
             <h1><strong><i><a id="bibleverse" href="https://www.biblegateway.com/passage/?search=Exodus+33%3A19&version=KJV"><strong>Exodus 33:19</strong></a></i></strong></h1> 
             <h1><i>. . . and I will proclaim the name of the Lord before thee; and will be gracious to whom I will be gracious, and will shew mercy on whom I will shew mercy.</i></h1>
         </footer>
     </div>
-    
-    <div class="row">
+    <div class="row4">
         <div class="col-12 copyright">
             <p id="copyright-1"></p>
             <p id="copyright-2"><strong><mark>All Rights Reserved</mark></strong></p>
         </div> 
-    </div>   
+    </div>
+    
 </div>
 		
   <script>
@@ -155,5 +158,6 @@
         });    
       }); 
   </script>
+
 </body>
 </html>
