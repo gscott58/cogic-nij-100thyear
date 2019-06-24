@@ -12,13 +12,42 @@
 	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 	<link rel="stylesheet" href="css/screen.css">
 	<style>
-  button {
-		background-color:  #f2f2f2;
-    color:             #000000;
-    text-decoration:   underline;
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
-	}
-  
+/*----------*/
+/*- Button -*/
+/*----------*/
+button {
+  background-color:  #f2f2f2;
+  color:             #000000;
+  text-decoration:   underline;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+/*------------------*/
+/*- Tooltip Begins -*/
+/*------------------*/
+.tooltip {
+  position: relative;
+  display: inline-block;
+  opacity: 1;
+}
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 150px;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  left: 105%;
+}
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+/*------------------*/
+/*- Tooltip Ends   -*/
+/*------------------*/
 	.row1 {
 		margin-top: 10px;
 	}
@@ -77,34 +106,22 @@
 		margin-top: 10px;
 		margin-bottom: 10px;
 	}
-	/*------------------*/
-	/*- unvisited link -*/
-	/*------------------*/
-	
-	a:link {
-		color: #ffffff;
-	}
-	/*----------------*/
-	/*- visited link -*/
-	/*----------------*/
-	
-	a:visited {
-		color: #ffffff;
-	}
-	/*-------------------*/
-	/*- mouse over link -*/
-	/*-------------------*/
-	
-	a:hover {
-		color: #ffffff;
-	}
-	/*-----------------*/
-	/*- selected link -*/
-	/*-----------------*/
-	
-	a:active {
-		color: #ffffff;
-	}
+	/*---------*/
+	/*- Links -*/
+	/*---------*/
+    a:link {
+      color: #ffffff;
+    }
+    a:visited {
+      color: #ffffff;
+    }
+    
+    a:hover {
+      color: #ffffff;
+    }
+    a:active {
+      color: #ffffff;
+    }
 	</style>
 </head>
 
@@ -138,7 +155,8 @@
 		</div>
 		<div class="row3">
 			<footer class="col-12">
-				<h1><strong><i><a id="bibleverse" href="https://www.biblegateway.com/passage/?search=Exodus+33%3A19&version=KJV"><strong><button type="button">Exodus 33:19</button></strong></a></i></strong></h1>
+				<h1><strong><i><a id="bibleverse" href="https://www.biblegateway.com/passage/?search=Exodus+33%3A19&version=KJV"><strong></strong><div class="tooltip"><button class="tooltip" type="button">Exodus 33:19</button><span class="tooltiptext">God speaks to Moses . . .</span></div>  </a></i></strong></h1>
+
 				<h1><i>. . . and I will proclaim the name of the Lord before thee; and will be gracious to whom I will be gracious, and will shew mercy on whom I will shew mercy.</i></h1> </footer>
 		</div>
 		<div class="row4">
@@ -147,7 +165,9 @@
 				<p id="copyright-2"><strong><mark>All Rights Reserved</mark></strong></p>
 			</div>
 		</div>
+ 
 	</div>
+ 
 	<script>
 	var d = new Date();
 	var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
