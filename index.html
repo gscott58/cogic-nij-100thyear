@@ -105,7 +105,21 @@ button {
 		margin-bottom: 10px;
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 	}
+  .text-color-1 {
+    background-color:  #A0522D;   /* dark red*/
+    color:             #ffffff;   /* white */
+  /*  font-weight: bold; */
+  }
 	
+   .text-color-2 {
+    color: #ffffff;    /* black */
+    font-weight: bold;
+  }
+   .text-color-3 {
+    color: #000000;    /* black */
+    font-weight: bold;
+  }
+  
 	#whenwhere {
 		text-align: left;
 		margin-left: auto;
@@ -114,6 +128,7 @@ button {
 		margin-bottom: 10px;
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 	}
+
 	/*---------*/
 	/*- Links -*/
 	/*---------*/
@@ -130,23 +145,60 @@ button {
     a:active {
       color: #ffffff;
     }
+
+	/*---------*/
+	/*- Table -*/
+	/*---------*/
+    table {
+    border-collapse: collapse;
+    width: 100%;
+    }
+
+    table, th, td {
+        padding: 8px;
+        text-align: left;
+        border: 2px solid #ddd;
+    }
+    
+
+    tr:hover{
+        background-color:#000000;
+        color:           #ffffff;
+/*        font-weight:     bold;  */
+    }
 	</style>
 </head>
 
 <body>
 	<div class="container-fluid" id="body">
+  
 		<div class="row1">
 			<header class="col-12 col-s-12">
 				<h1><strong><i>Northern Illinois Jurisdiction 100th Year Celebration Evangelist Department Workshop</i></strong></h1> </header>
 		</div>
+    
 		<div class="row2">
 			<div class="col-3" id="organizers">
 				<h2><strong>Committee Members</strong></h2>
-				<ul>
-					<li>Elder Anthony Scott</li>
-					<li>Sister Pearl Scott</li>
-					<li>Sister Peggy Rudolph</li>
-				</ul>
+
+        <table>
+            <tr>
+              <td> <span class="text-color-1">Pastor</span> - Alfred Williams, State Evangelist President</td>
+            </tr>
+            <tr>
+              <td> <span class="text-color-1">Evangelist</span> - Amanda Sue Davis, State Elect Lady Presiding</td>
+            </tr>
+            <tr>
+              <td> <span class="text-color-1">Bishop</span> - Edwin Walker, State Prelate</td>
+            </tr>
+            <tr>
+              <td> <span class="text-color-1">Mother</span> - Doris Rule, Supervisor of Women</td>
+            </tr>
+              <tr>
+              <td> <span class="text-color-1">Elder</span> - Anthony Scott, Workshop Facilitator</td>
+            </tr>
+        </table>
+
 			</div>
 			<div class="col-3" id="whenwhere">
 				<h2><strong>Date, Time, Where</strong></h2>
@@ -161,12 +213,14 @@ button {
 				<main class="col-5"> <img src="img/Jesus-Christ.jpg" alt="Jesus Christ"> </main>
 			</div>
 		</div>
+    
 		<div class="row3">
 			<footer class="col-12">
 				<h1><strong><i><a id="bibleverse" href="https://www.biblegateway.com/passage/?search=Exodus+33%3A19&version=KJV"><strong></strong><div class="tooltip"><button class="tooltip" type="button">Exodus 33:19</button><span class="tooltiptext">God speaks to Moses . . .</span></div>  </a></i></strong></h1>
         
 				<h1><i>. . . and I will proclaim the name of the Lord before thee; and will be gracious to whom I will be gracious, and will shew mercy on whom I will shew mercy.</i></h1> </footer>
 		</div>
+    
 		<div class="row4">
 			<div class="col-12 copyright">
         <div><p id="copyright-1"></p></div>
@@ -189,18 +243,21 @@ button {
 		$("#copyright-2").toggle(5000);
     $("button").effect("shake");
     
+/*
     $("#organizers").hover(function() {
 			$("#organizers").effect("shake");
 		}, function() {
 			$("#organizers").effect("shake");
 		});
     
-    
+*/
+/*    
     $("#whenwhere").hover(function() {
 			$("#whenwhere").effect("shake");
 		}, function() {
 			$("#whenwhere").effect("shake");
 		});
+*/
     
 		$("footer").hover(function() {
 			$("#copyright-1").effect("shake");
