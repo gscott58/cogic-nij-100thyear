@@ -24,6 +24,7 @@ h1, h2, h3 {
 	background-repeat:  no-repeat;
 }
 
+
 h1, h2, h3 {
     font-family: 'Lato', sans-serif;  /* use Lato Font for all main sections */
     color:         #ffff00;
@@ -52,7 +53,7 @@ p {
 }
 
 .copyright {
-	clear:          left;
+	clear:          both;
   width:          130px;
   font-family:    'Lato', sans-serif;
 	font-size:      .83em; 
@@ -118,11 +119,19 @@ p {
   }
       
   #whenwhere {
+    clear:          right;
     float:          right;
   }
 
+  #cogic {
+    clear:          right;
+    float:          right;
+
+
+  }
+
   footer {
-      clear: left;
+      clear: both;
   }
 }
 /*-----------------------------------------------------*/
@@ -158,11 +167,17 @@ p {
   }
       
   #whenwhere {
+    clear:          right;
     float:          right;
   }
-    
+  #cogic {
+    clear:          right;
+    float:          right;
+
+
+  }
   footer {
-      clear: left;
+      clear: both;
   }
 }
 /*-----------------------------------------------------*/
@@ -200,11 +215,19 @@ p {
   }
       
   #whenwhere {
+    clear:          right;
     float:          right;
+  }
+  
+  #cogic {
+    clear:          right;
+    float:          right;
+
+
   }
 
   footer {
-      clear: left;
+      clear: both;
   }
 }
 
