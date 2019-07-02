@@ -87,14 +87,22 @@
     }
     
     header,
+    #organizers,
+    #whenwhere,
+    #cogic,
     main,
     footer,
     #copyright-1,
     #copyright-2 {
-      width:    235px;
+        margin:  auto;
+        margin-bottom: 10px; 
+        display: none;        /*- causes jQuery toggle to fade-in as opposed to fade-out -*/    
+    }
+    
+    #copyright-1,
+    #copyright-2 {
+      width:  235px;
       margin: auto;
-      margin-bottom: 10px;  
-      display: none;        /*- display:none necessary for show/hide toggle to toggle to fade-in -*/
     }
     
     #copyright-1 {
@@ -182,6 +190,7 @@
 
 <body>
 <div class="container-fluid" id="body">
+
 		<div class="row1">
         <header class="col-12 col-s-12">
 				<h1><strong><i>Northern Illinois Jurisdiction 100th Year Celebration Evangelist Department Workshop</i></strong></h1> </header>
@@ -253,14 +262,17 @@
     document.getElementById("copyright-1").innerHTML = "<strong><mark>© Copyright " + d.getFullYear() + " Gregory & Christine Scott</mark></strong>.";
 
 $(document).ready(function() {
-
+/*--------------------------------------------------------*/
     $("header").toggle(1000);
-    $("main").toggle(2000);
-    $("footer").toggle(3000);
-    $("#copyright-1").toggle(4000);
+    $("#organizers").toggle(2000);
+    $("#whenwhere").toggle (2000);
+    $("#cogic").toggle(2000);
+    $("main").toggle(3000);   
+    $("footer").toggle(4000);
+    $("#copyright-1").toggle(5000);
     $("#copyright-2").toggle(5000);
-    $("button").effect("shake");
-
+    $("button").effect("shake");  
+/*--------------------------------------------------------*/
     /*
     $("#organizers").hover(function() {
     $("#organizers").effect("shake");
