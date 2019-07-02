@@ -11,283 +11,286 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 	<link rel="stylesheet" href="css/screen.css">
-	<style>
-/*----------*/
-/*- Button -*/
-/*----------*/
-button {
-  background-color:  #f2f2f2;
-  color:             #000000;
-  text-decoration:   underline;
-  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
-}
-/*------------------*/
-/*- Tooltip Begins -*/
-/*------------------*/
-.tooltip {
-  position: relative;
-  display: inline-block;
-  opacity: 1;
-}
-.tooltip .tooltiptext {
-  visibility: hidden;
-  width: 150px;
-  background-color: #000;
-  color: #fff;
-  text-align: center;
-  border-radius: 6px;
-  padding: 5px 0;
-  position: absolute;
-  z-index: 1;
-  top: -5px;
-  left: 105%;
-}
-.tooltip:hover .tooltiptext {
-  visibility: visible;
-}
-/*------------------*/
-/*- Tooltip Ends   -*/
-/*------------------*/
-	.row1 {
-		margin-top: 10px;
-	}
-	
-	mark {
-		background-color: yellow;
-		color: black;
-	}
-	
-	#body,
-	header,
-	footer,
-	#organizers,
-	#whenwhere,
-  #cogic
-      {
-		border: 1px solid black;
-		margin: 10px;
-	}
-	
-	h1,
-	h2,
-	h3,
-	h4,
-	h5,
-	h6 {
-		background-color: #A0522D;
-		color: #ffffff;
-		margin-top: 5px;
-		margin-bottom: 5px;
-		margin-left: 5px;
-		margin-right: 5px;
-		padding: 5px;
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
-	}
-	
-	header,
-	main,
-	footer,
-	#copyright-1,
-	#copyright-2 {
-    width:    235px;
-		margin: auto;
-		margin-bottom: 10px;  
-		display: none;        /*- display:none necessary for show/hide toggle to toggle to fade-in -*/
-	}
-	
-  #copyright-1 {
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
-  }
-  
-	#organizers {
-		text-align: left;
-		margin-left: auto;
-		margin-right: auto;
-		margin-top: 10px;
-		margin-bottom: 10px;
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
-	}
-  .text-color-1 {
-    color:             #ffffff;   /* white */
-    font-weight: bold;
-  }
-	
-   .text-color-2 {
-    color: #ffffff;    /* black */
-    font-weight: bold;
-  }
-   .text-color-3 {
-    color: #ffffff;    /* white */
-    font-weight: bold;
-  }
-  
-	#whenwhere,
-  #cogic
-  {
-		text-align: left;
-		margin-left: auto;
-		margin-right: auto;
-		margin-top: 10px;
-		margin-bottom: 10px;
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
-	}
-
-	/*---------*/
-	/*- Links -*/
-	/*---------*/
-    a:link {
-      color: #ffffff;
-    }
-    a:visited {
-      color: #ffffff;
+  <style>
+    /*----------*/
+    /*- Button -*/
+    /*----------*/
+    button {
+      background-color:  #f2f2f2;
+      color:             #000000;
+      text-decoration:   underline;
+      box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
     }
     
-    a:hover {
-      color: #ffffff;
+    /*------------------*/
+    /*- Tooltip Begins -*/
+    /*------------------*/
+    .tooltip {
+      position: relative;
+      display: inline-block;
+      opacity: 1;
     }
-    a:active {
-      color: #ffffff;
+    .tooltip .tooltiptext {
+      visibility: hidden;
+      width: 150px;
+      background-color: #000;
+      color: #fff;
+      text-align: center;
+      border-radius: 6px;
+      padding: 5px 0;
+      position: absolute;
+      z-index: 1;
+      top: -5px;
+      left: 105%;
     }
-
-	/*---------*/
-	/*- Table -*/
-	/*---------*/
-    table {
-    border-collapse: collapse;
-    width: 100%;
+    .tooltip:hover .tooltiptext {
+      visibility: visible;
     }
-
-    table, th, td {
-        padding: 8px;
-        text-align: left;
-        border: 2px solid #ddd;
+    /*------------------*/
+    /*- Tooltip Ends   -*/
+    /*------------------*/
+    
+    .row1 {
+      margin-top: 10px;
     }
     
-    tr:hover{
-        background-color:#454545;
-        color:           #ffffff;
-        font-weight:     bold;
-        text-decoration:  underline;
+    mark {
+      background-color: yellow;
+      color: black;
     }
     
-    iframe {
-        width:            100%
+    #body,
+    header,
+    footer,
+    #organizers,
+    #whenwhere,
+    #cogic
+        {
+      border: 1px solid black;
+      margin: 10px;
+    }
+    
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      background-color: #A0522D;
+      color: #ffffff;
+      margin-top: 5px;
+      margin-bottom: 5px;
+      margin-left: 5px;
+      margin-right: 5px;
+      padding: 5px;
+      box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+    }
+    
+    header,
+    main,
+    footer,
+    #copyright-1,
+    #copyright-2 {
+      width:    235px;
+      margin: auto;
+      margin-bottom: 10px;  
+      display: none;        /*- display:none necessary for show/hide toggle to toggle to fade-in -*/
+    }
+    
+    #copyright-1 {
+      box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+    }
+    
+    #organizers {
+      text-align: left;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+    }
+    
+    .text-color-1 {
+      color:             #ffffff;   /* white */
+      font-weight: bold;
+    }
+    
+     .text-color-2 {
+      color: #ffffff;    /* black */
+      font-weight: bold;
+    }
+     .text-color-3 {
+      color: #ffffff;    /* white */
+      font-weight: bold;
+    }
+    
+    #whenwhere,
+    #cogic
+    {
+      text-align: left;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
     }
 
-	</style>
+    /*---------*/
+    /*- Links -*/
+    /*---------*/
+      a:link {
+        color: #ffffff;
+      }
+      a:visited {
+        color: #ffffff;
+      }
+      
+      a:hover {
+        color: #ffffff;
+      }
+      a:active {
+        color: #ffffff;
+      }
+
+    /*---------*/
+    /*- Table -*/
+    /*---------*/
+      table {
+      border-collapse: collapse;
+      width: 100%;
+      }
+
+      table, th, td {
+          padding: 8px;
+          text-align: left;
+          border: 2px solid #ddd;
+      }
+      
+      tr:hover{
+          background-color:#454545;
+          color:           #ffffff;
+      }
+         
+      .text-on-background {
+          color:  #ffffff;
+          background: #A0522D;
+          font-weight: bold;
+          text-decoration:  underline;
+      }
+ 	</style>
 </head>
 
 <body>
-	<div class="container-fluid" id="body">
-  
+<div class="container-fluid" id="body">
 		<div class="row1">
-			<header class="col-12 col-s-12">
+        <header class="col-12 col-s-12">
 				<h1><strong><i>Northern Illinois Jurisdiction 100th Year Celebration Evangelist Department Workshop</i></strong></h1> </header>
 		</div>
     
 		<div class="row2">
-			<div class="col-3" id="organizers">
-				<h2><strong>Committee Members</strong></h2>
-
-        <table>
-            <tr>
-              <td> <strong>Pastor</strong> - Alfred Williams, State Evangelist President</td>
-            </tr>
-            <tr>
-              <td> <strong>Evangelist</strong> - Amanda Sue Davis, State Elect Lady Presiding</td>
-            </tr>
-            <tr>
-              <td> <strong>Bishop</strong> - Edwin Walker, State Prelate</td>
-            </tr>
-            <tr>
-              <td> <strong>Mother</strong> - Doris Rule, Supervisor of Women</td>
-            </tr>
-              <tr>
-              <td> <strong>Elder</strong> - Anthony Scott, Facilitator</td>
-            </tr>
-        </table>
-        
-			</div>
+        <div class="col-3" id="organizers">
+            <h2><strong>Committee Members</strong></h2>
+            <table>
+                <tr>
+                  <td> <span><strong><u>Pastor</u></strong></span> - Alfred Williams, State Evangelist President</td>
+                </tr>
+                <tr>
+                  <td> <span><strong><u>Evangelist</u></strong></span> - Amanda Sue Davis, State Elect Lady Presiding</td>
+                </tr>
+                <tr>
+                  <td> <span><strong><u>Bishop</strong></u></span> - Edwin Walker, State Prelate</td>
+                </tr>
+                <tr>
+                  <td> <span><strong><u>Mother</strong></u></span> - Doris Rule, Supervisor of Women</td>
+                </tr>
+                  <tr>
+                  <td> <span><strong><u>Elder</u></strong></span> - Anthony Scott, Facilitator</td>
+                </tr>
+            </table>       
+        </div>
     
-			<div class="col-3" id="whenwhere">
-      
-          <div>
-              <h2><strong>Date, Time, Where</strong></h2>              
-              <ul>
-                <li><strong>August 7th</strong> <u>and</u> <strong>9th, 2019</strong></li>
-                <li>6:00pm - 7:00pm</li>
-                <li><strong>Freedom Temple C.O.G.I.C</strong></li>
-                <li>1459 West 74th Street
-                <li>Chicago, Illinois 60636</li>
-              </ul>
-          </div>
+        <div class="col-3" id="whenwhere">      
+            <div>
+                <h2><strong>Date, Time, Where</strong></h2>              
+                <ul>
+                  <li><strong>August 7th</strong> <u>and</u> <strong>9th, 2019</strong></li>
+                  <li>6:00pm - 7:00pm</li>
+                  <li><strong>Freedom Temple C.O.G.I.C</strong></li>
+                  <li>1459 West 74th Street
+                  <li>Chicago, Illinois 60636</li>
+                </ul>
+            </div>
+        </div>
 
-       </div>
-
-      <div class="col-3" id="cogic">          
+        <div class="col-3" id="cogic">          
             <h2><strong>Celebrating 100 Years Pentecotal Worship</strong></h2>              
             <img src="backgrounds/cogic-100-years.jpg">        
-       </div>  
+        </div>  
 
-
-
-			<div>        
-				<main class="col-5"><img src="img/Jesus-Christ.jpg" alt="Jesus Christ"></main>
-			</div>
-		</div>
+        <div>        
+            <main class="col-5"><img src="img/Jesus-Christ.jpg" alt="Jesus Christ"></main>
+        </div>
+    </div>
     
 		<div class="row3">
-			<footer class="col-12">
+        <footer class="col-12">
 				<h1><strong><i><a id="bibleverse" href="https://www.biblegateway.com/passage/?search=Exodus+33%3A19&version=KJV" target="bible_verse"><strong></strong><div class="tooltip"><button class="tooltip" type="button">Exodus 33:19</button><span class="tooltiptext">God speaks to Moses . . .</span></div>  </a></i></strong></h1>
         
 				<h1><i>. . . and I will proclaim the name of the Lord before thee; and will be gracious to whom I will be gracious, and will shew mercy on whom I will shew mercy.</i></h1> </footer>
 		</div>
     
 		<div class="row4">
-			<div class="col-12 copyright">
-        <div><p id="copyright-1"></p></div>
-				<div><p id="copyright-2"><strong><mark>All Rights Reserved</mark></strong></p></div>
+        <div class="col-12 copyright">
+            <div><p id="copyright-1"></p></div>
+            <div><p id="copyright-2"><strong><mark>All Rights Reserved</mark></strong></p></div>
         </div>
-			</div>
-
-		</div> 
+    </div>
+</div> 
  
-	<script>
-	var d = new Date();
-	var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-	document.getElementById("copyright-1").innerHTML = "<strong><mark>© Copyright " + d.getFullYear() + " Gregory & Christine Scott</mark></strong>.";
-	$(document).ready(function() {
-		$("header").toggle(1000);
-		$("main").toggle(2000);
-		$("footer").toggle(3000);
-		$("#copyright-1").toggle(4000);
-		$("#copyright-2").toggle(5000);
+<script>
+    var d = new Date();
+    var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    document.getElementById("copyright-1").innerHTML = "<strong><mark>© Copyright " + d.getFullYear() + " Gregory & Christine Scott</mark></strong>.";
+
+$(document).ready(function() {
+
+    $("header").toggle(1000);
+    $("main").toggle(2000);
+    $("footer").toggle(3000);
+    $("#copyright-1").toggle(4000);
+    $("#copyright-2").toggle(5000);
     $("button").effect("shake");
-    
-/*
+
+    /*
     $("#organizers").hover(function() {
-			$("#organizers").effect("shake");
-		}, function() {
-			$("#organizers").effect("shake");
-		});
-    
-*/
-/*    
+    $("#organizers").effect("shake");
+    }, function() {
+    $("#organizers").effect("shake");
+    });  
+    */
+
+    /*    
     $("#whenwhere").hover(function() {
-			$("#whenwhere").effect("shake");
-		}, function() {
-			$("#whenwhere").effect("shake");
-		});
-*/
-    
-		$("footer").hover(function() {
-			$("#copyright-1").effect("shake");
-		}, function() {
-			$("#copyright-1").effect("shake");
-		});
-    
-	});
-	</script>
+    $("#whenwhere").effect("shake");
+    }, function() {
+    $("#whenwhere").effect("shake");
+    });
+    */
+
+    $("footer").hover(function() {
+    $("#copyright-1").effect("shake");
+    }, function() {
+    $("#copyright-1").effect("shake");
+    });
+
+    $("td").hover(function() {
+      $( this ).children("span").addClass   ( "text-on-background" );       
+      
+    }, function() {
+      $( this ).children("span").removeClass   ( "text-on-background" );
+    });
+});   
+</script>
 </body>
 
 </html>
