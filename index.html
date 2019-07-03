@@ -21,10 +21,9 @@
       text-decoration:   underline;
       box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
     }
-    
-    /*------------------*/
-    /*- Tooltip Begins -*/
-    /*------------------*/
+    /*------------------------------*/
+    /*- Tooltip-Button-Text-Begins -*/
+    /*------------------------------*/
     .tooltip {
       position: relative;
       display: inline-block;
@@ -46,9 +45,9 @@
     .tooltip:hover .tooltiptext {
       visibility: visible;
     }
-    /*------------------*/
-    /*- Tooltip Ends   -*/
-    /*------------------*/
+    /*---------------------------*/
+    /*- TooltipButton-Text-Ends -*/
+    /*---------------------------*/
     
     .row1 {
       margin-top: 10px;
@@ -185,6 +184,40 @@
           font-weight: bold;
           text-decoration:  underline;
       }
+    /*--------------------------*/
+    /*- Tooltip--Images-Begins -*/
+    /*--------------------------*/
+    .tooltip {
+      position: relative;
+      display: inline-block;
+      opacity: 1;
+    }
+    .tooltip .tooltipimage {
+      visibility: hidden;
+      width: 150px;
+      background-color: #000;
+      color: #fff;
+      text-align: center;
+      border-radius: 6px;
+      padding: 5px 0;
+      position: absolute;
+      z-index: 1;
+      top:  25px;
+      left: 48%;
+    }
+    .tooltip:hover .tooltipimage {
+      visibility: visible;
+
+    }
+    /*-----------------------*/
+    /*- Tooltip-Images-Ends -*/
+    /*-----------------------*/
+    #img-pastor {
+      position: absolute;
+      z-index: 5;
+      top:  25px;
+      right: 48%;
+    }
  	</style>
 </head>
 
@@ -201,19 +234,19 @@
             <h2><strong>Committee Members</strong></h2>
             <table>
                 <tr>
-                  <td> <span><strong><u>Pastor</u></strong></span> - Alfred Williams, State Evangelist President</td>
+                  <td><div class="tooltip"><span class="text-on-background"><strong><u>Pastor</u></strong></span> - Alfred Williams, State Evangelist President<img class="tooltipimage" src="img/Pastor-Alfred-Williams.jpg" alt="Pastor Alfred Williams"> </div></td>
                 </tr>
                 <tr>
-                  <td> <span><strong><u>Evangelist</u></strong></span> - Amanda Sue Davis, State Elect Lady Presiding</td>
+                  <td> <div class="tooltip"><span class="text-on-background"><strong><u>Evangelist</u></strong></span> - Amanda Sue Davis, State Elect Lady Presiding<img class="tooltipimage" src="img/Evangelist-Amanda-Sue-Davis.jpg" alt="Evangelist Amanda Sue Davis"></div></td>
                 </tr>
                 <tr>
-                  <td> <span><strong><u>Bishop</strong></u></span> - Edwin Walker, State Prelate</td>
+                  <td> <div class="tooltip"><span class="text-on-background"><strong><u>Bishop</strong></u></span> - Edwin Walker, State Prelate<img class="tooltipimage" src="img/Bishop-Edwin-Walker.jpg" alt="Bishop Edwin Walker"></div></td>
                 </tr>
                 <tr>
-                  <td> <span><strong><u>Mother</strong></u></span> - Doris Rule, Supervisor of Women</td>
+                  <td> <div class="tooltip"><span class="text-on-background"><strong><u>Mother</strong></u></span> - Doris Rule, Supervisor of Women<img class="tooltipimage" src="img/Mother-Doris-Rule.jpg" alt="Mother Doris Rule"></div></td>
                 </tr>
-                  <tr>
-                  <td> <span><strong><u>Elder</u></strong></span> - Anthony Scott, Facilitator</td>
+                <tr>
+                  <td> <div class="tooltip"><span class="text-on-background"><strong><u>Elder</u></strong></span> - Anthony Scott, Facilitator<img class="tooltipimage" src="img/Elder-Anthony-Scott.jpg" alt="Elder Anthony Scott"></div></td>
                 </tr>
             </table>       
         </div>
@@ -243,7 +276,7 @@
     
 		<div class="row3">
         <footer class="col-12">
-				<h1><strong><i><a id="bibleverse" href="https://www.biblegateway.com/passage/?search=Exodus+33%3A19&version=KJV" target="bible_verse"><strong></strong><div class="tooltip"><button class="tooltip" type="button">Exodus 33:19</button><span class="tooltiptext">God speaks to Moses . . .</span></div>  </a></i></strong></h1>
+				<h1><strong><i><a id="bibleverse" href="https://www.biblegateway.com/passage/?search=Exodus+33%3A19&version=KJV"><strong></strong><div class="tooltip"><button class="tooltip" type="button">Exodus 33:19</button><span class="tooltiptext">God speaks to Moses . . .</span></div>  </a></i></strong></h1>
         
 				<h1><i>. . . and I will proclaim the name of the Lord before thee; and will be gracious to whom I will be gracious, and will shew mercy on whom I will shew mercy.</i></h1> </footer>
 		</div>
@@ -266,11 +299,11 @@ $(document).ready(function() {
     $("header").toggle(1000);
     $("#organizers").toggle(2000);
     $("#whenwhere").toggle (2000);
-    $("#cogic").toggle(2000);
+    $("#cogic").toggle(3000);
     $("main").toggle(3000);   
     $("footer").toggle(4000);
-    $("#copyright-1").toggle(5000);
-    $("#copyright-2").toggle(5000);
+    $("#copyright-1").toggle(4000);
+    $("#copyright-2").toggle(4000);
     $("button").effect("shake");  
 /*--------------------------------------------------------*/
     /*
