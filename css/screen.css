@@ -122,6 +122,11 @@ p {
     float:          right;
   }
 
+  #subjects {
+    clear:          right;
+    float:          right;
+  }
+  
   #cogic {
     clear:          right;
     float:          right;
@@ -166,6 +171,12 @@ p {
   #whenwhere {
     float:          right;
   }
+  
+  #subjects {
+    clear:          right;
+    float:          right;
+  }
+  
   #cogic {
     clear:          right;
     float:          right;
@@ -209,6 +220,11 @@ p {
   }
       
   #whenwhere {
+    float:          right;
+  }
+
+  #subjects {
+    clear:          right;
     float:          right;
   }
   

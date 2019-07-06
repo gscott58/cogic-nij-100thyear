@@ -63,6 +63,7 @@
     footer,
     #organizers,
     #whenwhere,
+    #subjects,
     #cogic
         {
       border: 1px solid black;
@@ -88,6 +89,7 @@
     header,
     #organizers,
     #whenwhere,
+    #subjects,
     #cogic,
     main,
     footer,
@@ -132,6 +134,7 @@
     }
     
     #whenwhere,
+    #subjects,
     #cogic
     {
       text-align: left;
@@ -255,7 +258,7 @@
             <div>
                 <h2><strong>Date, Time, Where</strong></h2>              
                 <ul>
-                  <li><strong>August 7th</strong> <u>and</u> <strong>9th, 2019</strong></li>
+                  <li><strong>August 7th</strong> <span class="text-on-background">and</span> <strong>9th, 2019</strong></li>
                   <li>6:00pm - 7:00pm</li>
                   <li><strong>Freedom Temple C.O.G.I.C</strong></li>
                   <li>1459 West 74th Street
@@ -263,6 +266,20 @@
                 </ul>
             </div>
         </div>
+        
+        <div class="col-3" id="subjects">      
+            <div>
+                <h2><span class="text-on-background">Daily Subjects</span></h2>              
+                <ul>
+                  <li><span class="text-on-background">Day-1</span> - <strong>God's</strong> Election</li>
+                  <li><span class="text-on-background">Day-2</span> - <strong>God's</strong> Mercy or Grace</li>
+                  <li><span class="text-on-background">Day-3</span> - <strong>God's</strong> Omniscience</span></li>
+                </ul>
+            </div>
+        </div>
+
+        
+        
 
         <div class="col-3" id="cogic">          
             <h2><strong>Celebrating 100 Years Pentecotal Worship</strong></h2>              
@@ -270,7 +287,7 @@
         </div>  
 
         <div>        
-            <main class="col-5"><img src="img/Jesus-Christ.jpg" alt="Jesus Christ"></main>
+            <main class="col-5"><img id="jesus-christ" src="img/Jesus-Christ.jpg" alt="Jesus Christ"></main>
         </div>
     </div>
     
@@ -294,47 +311,46 @@
     var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
     document.getElementById("copyright-1").innerHTML = "<strong><mark>© Copyright " + d.getFullYear() + " Gregory & Christine Scott</mark></strong>.";
 
-$(document).ready(function() {
-/*--------------------------------------------------------*/
-    $("header").toggle(1000);
-    $("#organizers").toggle(2000);
-    $("#whenwhere").toggle (2000);
-    $("#cogic").toggle(3000);
-    $("main").toggle(3000);   
-    $("footer").toggle(4000);
-    $("#copyright-1").toggle(4000);
-    $("#copyright-2").toggle(4000);
-    $("button").effect("shake");  
-/*--------------------------------------------------------*/
+    $(document).ready(function() {
+        $("header").toggle(1000);
+        $("#organizers").toggle(2000);
+        $("#whenwhere").toggle (2000);
+        $("#subjects").toggle (2000);
+        $("#cogic").toggle(3000);
+        $("main").toggle(3000);   
+        $("footer").toggle(4000);
+        $("#copyright-1").toggle(4000);
+        $("#copyright-2").toggle(4000);
+        $("button").effect("shake");  
+
     /*
-    $("#organizers").hover(function() {
-    $("#organizers").effect("shake");
-    }, function() {
-    $("#organizers").effect("shake");
-    });  
+        $("#organizers").hover(function() {
+            $("#organizers").effect("shake");
+            }, function() {
+            $("#organizers").effect("shake");
+        });  
     */
 
     /*    
-    $("#whenwhere").hover(function() {
-    $("#whenwhere").effect("shake");
-    }, function() {
-    $("#whenwhere").effect("shake");
-    });
+        $("#whenwhere").hover(function() {
+            $("#whenwhere").effect("shake");
+            }, function() {
+            $("#whenwhere").effect("shake");
+        });
     */
 
-    $("footer").hover(function() {
-    $("#copyright-1").effect("shake");
-    }, function() {
-    $("#copyright-1").effect("shake");
-    });
+        $("footer").hover(function() {
+            $("#copyright-1").effect("shake");
+            }, function() {
+            $("#copyright-1").effect("shake");
+        });
 
-    $("td").hover(function() {
-      $( this ).children("span").addClass   ( "text-on-background" );       
-      
-    }, function() {
-      $( this ).children("span").removeClass   ( "text-on-background" );
-    });
-});   
+        $("td").hover(function() {
+            $( this ).children("span").addClass   ( "text-on-background" );             
+            }, function() {
+            $( this ).children("span").removeClass   ( "text-on-background" );
+        });
+    });   
 </script>
 </body>
 
